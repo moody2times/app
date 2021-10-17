@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "A simple practice authentication and authorization project",
 	"main": "app.js",
-	"type": "modules",
+	"type": "module",
 	"scripts": {
 		"start": "nodemon app.js"
 	},
