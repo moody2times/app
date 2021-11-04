@@ -2,7 +2,7 @@
 	"name": "auth",
 	"version": "1.0.0",
 	"description": "A simple practice authentication and authorization project",
-	"main": "app.js",
+	"main": "app.mjs",
 	"type": "module",
 	"scripts": {
 		"start": "nodemon app.js"
