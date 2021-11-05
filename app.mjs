@@ -4,6 +4,8 @@ import { config } from "dotenv";
 
 config();
 
+const PORT = process.env.PORT || 5000;
+
 const app = express();
 
 app.use(express.json());
@@ -13,6 +15,6 @@ app.get("/", (req, res) => {
 	res.status(200).json(demoKey);
 });
 
-app.listen(3000, () => {
-	console.log("running on port 3000");
+app.listen(PORT, () => {
+	console.log(`listening on port ${PORT}`);
 });
