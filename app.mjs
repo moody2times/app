@@ -15,8 +15,8 @@ app.use(express.json());
 app.use(cookieParser(KEY));
 
 app.get("/", (req, res) => {
-	const demoKey = crypto.randomBytes(32).toString("hex");
-	res.status(200).json(demoKey);
+	// const demoKey = crypto.randomBytes(32).toString("hex");
+	res.status(200).json("Hello world!");
 });
 
 app.listen(PORT, () => {
