@@ -6,11 +6,13 @@ import cookieParser from "cookie-parser";
 config();
 
 const PORT = process.env.PORT || 5000;
+const SECRET = process.env.SECRET;
+const KEY = process.env.KEY;
 
 const app = express();
 
 app.use(express.json());
-app.use(cookieParser());
+app.use(cookieParser(KEY));
 
 app.get("/", (req, res) => {
 	const demoKey = crypto.randomBytes(32).toString("hex");
