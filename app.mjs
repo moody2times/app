@@ -1,6 +1,7 @@
 import express from "express";
 import crypto from "crypto";
 import { config } from "dotenv";
+import cookieParser from "cookie-parser";
 
 config();
 
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.get("/", (req, res) => {
 	const demoKey = crypto.randomBytes(32).toString("hex");
