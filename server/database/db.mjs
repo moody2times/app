@@ -6,6 +6,11 @@ const collection = "user";
 
 const mongoClient = new MongoClient(url);
 mongoClient.connect((error, client) => {
+	if (error) {
+		client.close();
+	}
 	const db = client.db(dbName);
 	const collections = db.collection(collection);
 });
+
+export default mongoClient.collections;
