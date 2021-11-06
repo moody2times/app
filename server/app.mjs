@@ -12,10 +12,10 @@ const KEY = process.env.KEY;
 const app = express();
 
 app.use(express.json());
-app.use(cookieParser(KEY));
+app.use(cookieParser(SECRET));
 
 app.get("/", (req, res) => {
-	res.cookie("pass", SECRET);
+	res.cookie("pass", KEY);
 	// const demoKey = crypto.randomBytes(32).toString("hex");
 	res.status(200).json("Hello world!");
 });
