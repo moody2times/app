@@ -1,7 +1,7 @@
 import express from "express";
-import crypto from "crypto";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
+import { userCollection } from "./database/db.mjs";
 
 config();
 
@@ -16,8 +16,8 @@ app.use(cookieParser(SECRET));
 
 app.get("/", (req, res) => {
 	res.cookie("pass", KEY);
-	// const demoKey = crypto.randomBytes(32).toString("hex");
-	res.status(200).json("Hello world!");
+	// userCollection.insertOne({ user: "moody" });
+	res.status(200).json(KEY);
 });
 
 app.listen(PORT, () => {
