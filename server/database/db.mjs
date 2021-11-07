@@ -1,16 +1,16 @@
 import { MongoClient } from "mongodb";
 
 const url = "mongodb://localhost:27017";
-const dbName = "catch_up";
+const options = {
+	useNewUrlParser: true,
+	maxPoolSize: 20,
+	waitQueueTimeoutMS: 2500,
+};
+const dbName = "meetNgreet";
 const collection = "user";
 
-const mongoClient = new MongoClient(url);
-mongoClient.connect((error, client) => {
-	if (error) {
-		client.close();
-	}
-	const db = client.db(dbName);
-	const collections = db.collection(collection);
-});
+const client = new MongoClient(url, options);
+client.connect();
 
-export default mongoClient.collections;
+const db = client.db(dbName);
+export const userCollection = db.collection(collection);
