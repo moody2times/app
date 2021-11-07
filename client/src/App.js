@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addLike, addDislike } from "./features/likes/likeSlice";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
 	const like = useSelector((state) => state.like.like);
