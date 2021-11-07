@@ -18,7 +18,7 @@ function App() {
 
 	return (
 		<React.Fragment>
-			<h1>Meet</h1>
+			<h1>meetNgreet</h1>
 			<p>{like}</p>
 			<p>{dislike}</p>
 			<button onClick={handleLikeClick}>Like</button>
