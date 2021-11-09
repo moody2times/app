@@ -1,16 +1,18 @@
-import { Router } from "express";
+import express from "express";
+
+const router = express.Router();
 
 //home page route
-Router.get("/", (req, res) => {
+router.get("/", (req, res) => {
 	res.end("home page");
 });
 
-Router.get("/login", (req, res) => {
+router.get("/login", (req, res) => {
 	res.end("login page");
 });
 
-Router.get("/register", (req, res) => {
+router.get("/register", (req, res) => {
 	res.end("register page");
 });
 
-export default Router;
+export default router;
