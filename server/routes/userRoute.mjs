@@ -1,11 +1,12 @@
 import { Router } from "express";
+const userRouter = Router();
 
-Router.get("/:username", (req, res) => {
+userRouter.get("/:username", (req, res) => {
 	res.end("user page");
 });
 
-Router.get("/profile", (req, res) => {
+userRouter.get("/profile", (req, res) => {
 	res.end("profile page");
 });
 
-export default Router;
+export default userRouter;
