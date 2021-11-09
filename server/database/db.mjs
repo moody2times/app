@@ -1,16 +1,16 @@
-import { MongoClient } from "mongodb";
+import mongoose from "mongoose";
 
-const url = "mongodb://localhost:27017";
-const options = {
-	useNewUrlParser: true,
-	maxPoolSize: 20,
-	waitQueueTimeoutMS: 2500,
-};
-const dbName = "meetNgreet";
-const collection = "user";
+const URI = "http://localhost:27017/meet_n_greet";
 
-const client = new MongoClient(url, options);
-client.connect();
-
-const db = client.db(dbName);
-export const userCollection = db.collection(collection);
+mongoose
+	.connect(URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useFindAndModify: false,
+	})
+	.then(() => {
+		console.log("connected to mongodb");
+	})
+	.catch((error) => {
+		console.log(error.message);
+	});
