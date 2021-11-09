@@ -12,3 +12,5 @@ Router.get("/login", (req, res) => {
 Router.get("/register", (req, res) => {
 	res.end("register page");
 });
+
+export default Router;
