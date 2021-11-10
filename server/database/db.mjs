@@ -14,10 +14,6 @@ mongoose
 		console.log(error.message);
 	});
 
-mongoose.connection.on("connection", () =>
-	console.log("Connection established!")
-);
-
 mongoose.connection.on("connected", () => console.log("Connected to DB"));
 
 mongoose.connection.on("disconnected", () => console.log("Connection lost"));
