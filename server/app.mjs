@@ -3,6 +3,7 @@ import { config } from "dotenv";
 import cookieParser from "cookie-parser";
 import main from "./routes/mainRoute.mjs";
 import user from "./routes/userRoute.mjs";
+import mongoose from "./database/db.mjs";
 
 config();
 
