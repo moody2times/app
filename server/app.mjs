@@ -1,7 +1,6 @@
 import express from "express";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
-import { userCollection } from "./database/db.mjs";
 import main from "./routes/mainRoute.mjs";
 import user from "./routes/userRoute.mjs";
 
