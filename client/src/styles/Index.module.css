@@ -9,3 +9,8 @@
 :root {
 	font-size: 62.5%;
 }
+
+body {
+	letter-spacing: 0.15rem;
+	line-height: 1.5;
+}
