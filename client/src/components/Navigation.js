@@ -9,7 +9,10 @@ export const Navigation = () => {
 				<h1 className={styles.heading}>meet-N-greet</h1>
 			</div>
 			<div>
-				<Link>Home</Link>
+				<Link to="/">Home</Link>
+				<Link to="/profile">Profile</Link>
+				<Link to="/friends">Friends</Link>
+				<Link to="/settings">Settings</Link>
 			</div>
 		</React.Fragment>
 	);
