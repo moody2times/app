@@ -9,3 +9,10 @@
 .heading {
 	font-size: 15rem;
 }
+
+a {
+	display: inline-block;
+	font-size: 1.7rem;
+	padding: 2rem 4rem;
+	text-decoration: none;
+}
