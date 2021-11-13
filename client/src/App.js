@@ -4,12 +4,12 @@ import { Navigation } from "./components/Navigation";
 // import { addLike, addDislike } from "./features/likes/likeSlice";
 import "./styles/App.module.css";
 
-function App() {
+const App = () => {
 	// const like = useSelector((state) => state.like.like);
 	// const dislike = useSelector((state) => state.like.dislike);
 	// const dispatch = useDispatch();
 
 	return <Navigation />;
-}
+};
 
 export default App;
