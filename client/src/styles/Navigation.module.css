@@ -6,8 +6,9 @@
 	width: 100%;
 }
 
-.heading {
-	font-size: 15rem;
+h1 {
+	font-size: 4rem;
+	padding: 6rem 4rem 2rem;
 }
 
 a {
