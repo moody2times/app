@@ -5,7 +5,7 @@ import styles from "../styles/Navigation.module.css";
 export const Navigation = () => {
 	return (
 		<React.Fragment>
-			<div>
+			<div className={styles.hero}>
 				<h1>meet-N-greet</h1>
 				<div>
 					<Link to="/">Home</Link>
