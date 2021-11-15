@@ -1,13 +1,12 @@
 import express from "express";
 import { loginHandler } from "../controller/login.mjs";
+import { registerHandler } from "../controller/register.mjs";
 
 const router = express.Router();
 
 //home page route
 router.post("/login", loginHandler);
 
-router.post("/register", (req, res) => {
-	res.end("register page");
-});
+router.post("/register", registerHandler);
 
 export default router;
