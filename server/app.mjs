@@ -21,7 +21,8 @@ app.use(cookieParser(SECRET));
 app.get("/", (req, res) => {
 	res.cookie("pass", KEY);
 	// userCollection.insertOne({ user: "moody" });
-	res.status(200).json(KEY);
+	res.status(200);
+	res.end("<h1>Hello world!</h1>");
 });
 
 app.listen(PORT, () => {
