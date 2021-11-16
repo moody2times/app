@@ -7,5 +7,5 @@ export const loginHandler = (req, res) => {
 	//authenticate user
 
 	res.status(200);
-	res.end();
+	res.end("<h1>Welcome</h1>");
 };
