@@ -12,11 +12,11 @@ const SECRET = process.env.SECRET;
 const KEY = process.env.KEY;
 
 const app = express();
-app.use("/home", main);
-app.use("/user", user);
 
 app.use(express.json());
 app.use(cookieParser(SECRET));
+app.use("/home", main);
+app.use("/user", user);
 
 app.listen(PORT, () => {
 	console.log(`listening on port ${PORT}`);
