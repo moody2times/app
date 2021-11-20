@@ -8,5 +8,5 @@ export const registerHandler = (req, res) => {
 	//store user in database
 
 	res.status(200);
-	res.end("<h1>Registration successful</h1>");
+	res.end(`${username} and ${password}`);
 };
