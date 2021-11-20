@@ -1,4 +1,6 @@
 export const users = (req, res) => {
+	const { username } = req.params;
+
 	res.status(200);
-	res.end(`<h1>Welcome user </h1>`);
+	res.end(`Current user is ${username}`);
 };
