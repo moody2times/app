@@ -15,7 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser(SECRET));
-app.use("/home", main);
+app.use("/", main);
 app.use("/user", user);
 
 app.listen(PORT, () => {
