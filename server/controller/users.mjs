@@ -1,4 +1,4 @@
-export const users = (req, res) => {
+export const userHandler = (req, res) => {
 	const { username } = req.params;
 
 	res.status(200);
