@@ -9,7 +9,6 @@ config();
 
 const PORT = process.env.PORT || 5000;
 const SECRET = process.env.SECRET;
-const KEY = process.env.KEY;
 
 const app = express();
 
