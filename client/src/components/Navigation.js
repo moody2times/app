@@ -6,8 +6,8 @@ export const Navigation = () => {
 	return (
 		<React.Fragment>
 			<div className={styles.hero}>
-				<h1>meet-N-greet</h1>
 				<div>
+					<h1>meet-N-greet</h1>
 					<Link to="/">Home</Link>
 					<Link to="/profile">Profile</Link>
 					<Link to="/friends">Friends</Link>
