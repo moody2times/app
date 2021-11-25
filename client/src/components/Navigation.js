@@ -4,16 +4,14 @@ import styles from "../styles/Navigation.module.css";
 
 export const Navigation = () => {
 	return (
-		<React.Fragment>
-			<div className={styles.hero}>
-				<div>
-					<h1>meet-N-greet</h1>
-					<Link to="/">Home</Link>
-					<Link to="/profile">Profile</Link>
-					<Link to="/friends">Friends</Link>
-					<Link to="/settings">Settings</Link>
-				</div>
+		<div className={styles.hero}>
+			<div>
+				<h1>meet-N-greet</h1>
+				<Link to="/">Home</Link>
+				<Link to="/profile">Profile</Link>
+				<Link to="/friends">Friends</Link>
+				<Link to="/settings">Settings</Link>
 			</div>
-		</React.Fragment>
+		</div>
 	);
 };
