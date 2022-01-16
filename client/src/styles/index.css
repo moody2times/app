@@ -7,10 +7,12 @@
 }
 
 :root {
+	color: #141414;
 	font-size: 62.5%;
 }
 
 body {
+	font-size: 1.7rem;
 	letter-spacing: 0.15rem;
 	line-height: 1.5;
 }
